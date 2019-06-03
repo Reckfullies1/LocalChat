@@ -1,0 +1,34 @@
+# LocalChat
+# <name> = Player's name
+# <message> = Player's message
+# Use bukkit color codes in format - https://wiki.ess3.net/mc/
+# Use -1 radius for global/infinite distance
+normal-chat:
+  format: '&r<name> dit: <message>'
+commands:
+- ==: ConfigCommand
+  aliases:
+    - '/c'
+  format: '&r<name> crie : &4<message>'
+  radius: 30
+- ==: ConfigCommand
+  aliases:
+    - '/vb'
+  format: '&r&7<name> chuchote : <message>'
+  radius: 3
+- ==: ConfigCommand
+  aliases:
+    - '/me'
+  format: '&r&d<name> <message>'
+  radius: 15
+- ==: ConfigCommand
+  aliases:
+    - '/pub'
+  format: '&r&2[PUBLICITE]: <message> [<name>]'
+  radius: -1
+- ==: ConfigCommand
+  aliases:
+    - '/g'
+    - '/global'
+  format: '&r&b[GLOBAL] <name>: <message>'
+  radius: -1

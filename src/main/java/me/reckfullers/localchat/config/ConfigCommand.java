@@ -1,0 +1,41 @@
+package me.reckfullers.localchat.config;
+
+import org.bukkit.configuration.serialization.ConfigurationSerializable;
+import org.bukkit.configuration.serialization.SerializableAs;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+@SerializableAs("ConfigCommand")
+public class ConfigCommand implements ConfigurationSerializable
+{
+    public ArrayList<String> aliases;
+    public String format;
+    public int radius;
+
+    public ConfigCommand(ArrayList<String> aliases, String format, int radius)
+    {
+        this.aliases = aliases;
+        this.format = format;
+        this.radius = radius;
+    }
+
+    @SuppressWarnings("unchecked")
+    public ConfigCommand(Map<String, Object> serializedConfigCommand)
+    {
+        this.aliases = (ArrayList<String>) serializedConfigCommand.get("aliases");
+        this.format = (String) serializedConfigCommand.get("format");
+        this.radius = (int) serializedConfigCommand.get("radius");
+    }
+
+    @Override
+    public Map<String, Object> serialize()
+    {
+        Map<String, Object> result = new HashMap<>();
+        result.put("aliases", aliases);
+        result.put("format", format);
+        result.put("radius", radius);
+        return result;
+    }
+}

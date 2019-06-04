@@ -1,4 +1,4 @@
 name: LocalChat
 version: ${project.version}
-main: me.reckfullers.localchat.LocalChat
+main: me.reckfullies.localchat.LocalChat
 api-version: 1.14

@@ -1,7 +1,7 @@
-package me.reckfullers.localchat.listeners;
+package me.reckfullies.localchat.listeners;
 
-import me.reckfullers.localchat.LocalChat;
-import me.reckfullers.localchat.config.ConfigCommand;
+import me.reckfullies.localchat.LocalChat;
+import me.reckfullies.localchat.config.ConfigCommand;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

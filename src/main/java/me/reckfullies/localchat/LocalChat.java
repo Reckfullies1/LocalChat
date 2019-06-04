@@ -1,7 +1,7 @@
-package me.reckfullers.localchat;
+package me.reckfullies.localchat;
 
-import me.reckfullers.localchat.config.ConfigCommand;
-import me.reckfullers.localchat.listeners.ChatListener;
+import me.reckfullies.localchat.config.ConfigCommand;
+import me.reckfullies.localchat.listeners.ChatListener;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.plugin.java.JavaPlugin;
 

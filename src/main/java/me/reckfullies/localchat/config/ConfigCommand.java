@@ -1,4 +1,4 @@
-package me.reckfullers.localchat.config;
+package me.reckfullies.localchat.config;
 
 import org.bukkit.configuration.serialization.ConfigurationSerializable;
 import org.bukkit.configuration.serialization.SerializableAs;

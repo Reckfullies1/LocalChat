@@ -73,7 +73,7 @@ public class ChatListener implements Listener
     {
         for (Player player : Bukkit.getOnlinePlayers())
         {
-            if (radius == -1 || radius == 0)
+            if (radius <= 0)
             {
                 player.sendMessage(message);
             }

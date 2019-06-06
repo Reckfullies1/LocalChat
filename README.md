@@ -14,7 +14,7 @@ There is also an extra setting which can specify the format of all normal chat m
 **There are various settings for each command that are as follows:**
  - **Aliases** - A list of strings that specify the chat commands which call this command  **(including the /)**
  - **Format** - The format of the messages in chat including colors([https://wiki.ess3.net/mc/](https://dev.bukkit.org/linkout?remoteUrl=https%253a%252f%252fwiki.ess3.net%252fmc%252f)), name/message placeholders(<name> and <message> respectively), and any other special formatting
- - **Radius** - Radius**(in blocks)**  away from the sending player that other players will see the message, setting this to 0 or lower will consider the command as global/infinite radius.
+ - **Radius** - Radius **(in blocks)**  away from the sending player that other players will see the message, setting this to 0 or lower will consider the command as global/infinite radius.
 
 **Planned Features**
 -   Custom permissions specified per-command in the config - should be very easy

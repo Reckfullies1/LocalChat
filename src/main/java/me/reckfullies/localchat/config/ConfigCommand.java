@@ -11,12 +11,14 @@ import java.util.Map;
 public class ConfigCommand implements ConfigurationSerializable
 {
     public ArrayList<String> aliases;
+    public String permission;
     public String format;
     public int radius;
 
-    public ConfigCommand(ArrayList<String> aliases, String format, int radius)
+    public ConfigCommand(ArrayList<String> aliases, String permission, String format, int radius)
     {
         this.aliases = aliases;
+        this.permission = permission;
         this.format = format;
         this.radius = radius;
     }
@@ -25,6 +27,7 @@ public class ConfigCommand implements ConfigurationSerializable
     public ConfigCommand(Map<String, Object> serializedConfigCommand)
     {
         this.aliases = (ArrayList<String>) serializedConfigCommand.get("aliases");
+        this.permission = (String) serializedConfigCommand.get("permission");
         this.format = (String) serializedConfigCommand.get("format");
         this.radius = (int) serializedConfigCommand.get("radius");
     }
@@ -34,6 +37,7 @@ public class ConfigCommand implements ConfigurationSerializable
     {
         Map<String, Object> result = new HashMap<>();
         result.put("aliases", aliases);
+        result.put("permission", permission);
         result.put("format", format);
         result.put("radius", radius);
         return result;

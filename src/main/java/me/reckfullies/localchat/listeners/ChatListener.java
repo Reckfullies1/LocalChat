@@ -37,12 +37,19 @@ public class ChatListener implements Listener
 
                 if (args[0].equalsIgnoreCase(alias))
                 {
-                    String joinedMessage = StringUtils.join(args, " ").replace(args[0], "").trim();
-
-                    if (!joinedMessage.isEmpty())
+                    if (command.permission == null || command.permission.isEmpty() || event.getPlayer().hasPermission(command.permission))
                     {
-                        String formattedMessage = formatMessage(event.getPlayer().getDisplayName(), joinedMessage, command.format);
-                        SendMessage(formattedMessage, event.getPlayer().getLocation(), command.radius);
+                        String joinedMessage = StringUtils.join(args, " ").replace(args[0], "").trim();
+
+                        if (!joinedMessage.isEmpty())
+                        {
+                            String formattedMessage = formatMessage(event.getPlayer().getDisplayName(), joinedMessage, command.format);
+                            SendMessage(formattedMessage, event.getPlayer().getLocation(), command.radius);
+                        }
+                    }
+                    else
+                    {
+                        event.getPlayer().sendMessage(ChatColor.RED + "You don't have permission to use that command!");
                     }
 
                     event.setCancelled(true);

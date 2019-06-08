@@ -9,26 +9,31 @@ commands:
 - ==: ConfigCommand
   aliases:
     - '/c'
+  permission: ''
   format: '&r<name> crie : &4<message>'
   radius: 30
 - ==: ConfigCommand
   aliases:
     - '/vb'
+  permission: ''
   format: '&r&7<name> chuchote : <message>'
   radius: 3
 - ==: ConfigCommand
   aliases:
     - '/me'
+  permission: ''
   format: '&r&d<name> <message>'
   radius: 15
 - ==: ConfigCommand
   aliases:
     - '/pub'
+  permission: 'localchat.testpermission'
   format: '&r&2[PUBLICITE]: <message> [<name>]'
   radius: -1
 - ==: ConfigCommand
   aliases:
     - '/g'
     - '/global'
+  permission: ''
   format: '&r&b[GLOBAL] <name>: <message>'
   radius: -1

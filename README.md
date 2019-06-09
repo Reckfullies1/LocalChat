@@ -3,7 +3,7 @@
 [![Generic badge](https://img.shields.io/github/license/Reckfullies/LocalChat.svg?label=license&style=popout)](https://github.com/Reckfullies/LocalChat/blob/master/LICENSE.md)
 [![Generic badge](https://img.shields.io/github/last-commit/Reckfullies/LocalChat.svg?label=last%20commit&style=popout)](https://github.com/Reckfullies/LocalChat/commits/master)
 [![Generic badge](https://img.shields.io/github/downloads/Reckfullies/LocalChat/total.svg?label=github%20downloads&style=popout)](https://github.com/Reckfullies/LocalChat)
-[![Generic badge](http://badge.henrya.org/spigotbukkit/downloads?spigot=68073&bukkit=323623&color=red&name=spigot/bukkit%20downloads)](https://dev.bukkit.org/projects/local-chat)
+[![Generic badge](http://badge.henrya.org/spigotbukkit/downloads?spigot=68073&bukkit=323623&color=red&name=spigot/bukkit%20downloads)](https://www.spigotmc.org/resources/local-chat.68073/)
 
 This is a project I created for fun in response to a request on the bukkit forums. Its pretty simple and straightforward.
 

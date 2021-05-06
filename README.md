@@ -1,3 +1,5 @@
+> :warning: **This project is inactive and has been archived**
+
 # LocalChat
 
 [![Generic badge](https://img.shields.io/github/license/Reckfullies/LocalChat.svg?label=license&style=popout)](https://github.com/Reckfullies/LocalChat/blob/master/LICENSE.md)
